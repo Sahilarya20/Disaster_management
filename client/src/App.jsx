@@ -7,9 +7,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 const { Header, Content } = Layout;
 const { Title, Paragraph } = Typography;
 
-const socket = io('http://localhost:4000');
+const API_BASE = process.env.REACT_APP_API_BASE;
+const socket = io(API_BASE);
 
-const API_BASE = 'http://localhost:4000';
 
 export default function App() {
   const [form] = Form.useForm();
