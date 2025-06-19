@@ -7,7 +7,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 const { Header, Content } = Layout;
 const { Title, Paragraph } = Typography;
 
-const API_BASE = process.env.REACT_APP_API_BASE;
+// const API_BASE = process.env.REACT_APP_API_BASE;
+const API_BASE = 'https://disaster-management-1-ye30.onrender.com';
+
+console.log("env not working on vercel", process.env.REACT_APP_API_BASE)
 const socket = io(API_BASE);
 
 
